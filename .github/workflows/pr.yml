@@ -13,6 +13,11 @@ jobs:
       - name: Compile Code
         run: ./.github/scripts/compile_script.sh "${pwd}"
         shell: bash
-      - name: Run program
-        run: ./submission
-        shell: bash
+      - name: Input1 (2)
+        run: ./submission < .github/scripts/input1 2>&1
+      - name: Input1 (5)
+        run: ./submission < .github/scripts/input2 2>&1
+      - name: Input1 (634574)
+        run: ./submission < .github/scripts/input3 2>&1
+      - name: Input1 (634575)
+        run: ./submission < .github/scripts/input4 2>&1
